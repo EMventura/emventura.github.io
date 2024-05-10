@@ -16,5 +16,5 @@ body { font-family: Georgia; color: #fff; }
 /* --// override to force 1/8th width grids -- */
 .yui-gf .yui-u{width:80.2%;}
 /*.yui-gf div.first{width:12.3%;}*/
-
+.yui-u.first {margin-bottom: 15px}
 h7 {font-size:28px; font-family:Georgia; font-weight: normal; font-style:italic}
