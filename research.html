@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R422DSCLH8"></script>
+    <script>
+     window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-R422DSCLH8');
+    </script>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -59,6 +68,9 @@
                         <a class="page-scroll" href="./research.html" style="text-decoration: none">research</a>
                     </li>
                     <li>
+                        <a class="page-scroll" href="./meraxes.html" style="text-decoration: none">meraxes</a>
+                    </li>
+                    <li>
                         <a class="page-scroll" href="./contact.html" style="text-decoration: none">Contact</a>
                     </li>
                 </ul>
@@ -91,36 +103,64 @@
                                 <div class="yui-gf">
                                      <p>&nbsp;</p>
                                      <div class="yui-u first">
-                                         <h7><i>Research interest</i></h7>
+                                         <h7><i>Research Highlights</i></h7>
                                      </div>
-                                     <div class="yui-u">
-                                         <p>
-                                             Population III stars
-                                         </p>
-                                         <p>
-                                             Epoch of Reionization & Cosmic Dawn
-                                         </p>
-                                         <p>
-                                             Numerical simulations
-                                        </p>
-                                         <p>
-                                             21cm physics
-                                        </p>
-                                     </div>
-                                </div><!--// .yui-gf -->
-                                <div class="yui-gf">
-                                    <div class="yui-u first">
-                                        <h7>Selected Articles</h7>
+                                     <ul class=gridder>
+                                        <li class=gridder-list data-griddercontent=#content1>
+                                            <div class=gridder-thumb>
+                                                <img src="./img/LF_def5.pdf">
+                                                <h3>
+                                                    <span>A model for galaxy-galaxy strong lensing statistics in surveys</span>
+                                                </h3>
+                                                <div></div>
+                                            </div>
+                                        </li>
+                                        <li class=gridder-list data-griddercontent=#content2>
+                                            <div class=gridder-thumb>
+                                                <img src="./img/SignalRun6.png">
+                                                <h3>
+                                                    <span>Magnification bias depends on source size-L relation</span>
+                                                </h3>
+                                                <div></div>
+                                            </div>
+                                        </li>
+                                    <div id=content1 class=gridder-content>
+                                        <h2>A model for galaxy-galaxy strong lensing statistics in surveys</h2>
+                                        <div class=gridder-wrapper>
+                                            <!-- <a href=https://ui.adsabs.harvard.edu/abs/2023MNRAS.523L..21F/abstract class=a-im></a> -->
+                                            <img src="./img/LF_def5.pdf">
+                                            <p>Photometric wide-area observations in the next decade will be capable of detecting a large number of
+                                            galaxy-scale strong gravitational lenses, increasing the gravitational lens sample size by orders of magnitude.
+                                            To aid in forecasting and analysis of these surveys, we construct a flexible model based on observed distributions
+                                            for the lens and source properties and test it on the results of past lens searches, including SL2S, SuGOHI
+                                            and searches on the COSMOS HST and DES fields.
+                                            We use this model to estimate the expected yields of some current and planned surveys, including Euclid Wide,
+                                            Vera Rubin LSST, and Roman High Latitude Wide Area.
+                                            The model proposed includes a set of free parameters to constrain on the identifiability of a lens in an image,
+                                            allowing construction of prior probability distributions for different lens detection methods.
+                                            The code used in this work is made publicly available. </p>
+                                            <a href=https://arxiv.org/pdf/2404.03143.pdf class=button>Read the paper</a>
+                                            <a href=https://github.com/Ferr013/GALESS class=button>Check the code</a>
+                                        </div>
                                     </div>
-                                    <span style="font-size:18px">
-                                        <b>The role of Pop III stars and early black holes in the 21-cm global signal from Cosmic Dawn.</b>
-                                    </span><br>
-                                    <span style="font-size:14px">
-                                        Emanuele M. Ventura, Alessandro Trinca, Raffaella Schneider, Luca Graziani, Rosa Valiante, and J. Stuart B. Wyithe
-                                    </span><br>
-                                    <span style="font-size:14px">
-                                        <a href="https://academic.oup.com/mnras/article/520/3/3609/6998577">MNRAS (2023), 520, 3609-3625</a> 
-                                    </span><br />
+                                    <div id=content2 class=gridder-content>
+                                        <h2>The role of Pop III stars and early black holes in the 21-cm signal from Cosmic Dawn </h2>
+                                        <div class=gridder-wrapper>
+                                            <img src="./img/SignalRun6.png">
+                                            <p>Modeling the 21-cm global signal from the Cosmic Dawn is challenging due to the many poorly constrained physical processes that come into play. 
+                                                We address this problem using the semi-analytical code 'Cosmic Archaeology Tool' (CAT). 
+                                                CAT follows the evolution of dark matter haloes tracking their merger history and provides an ab initio description of their baryonic evolution, 
+                                                starting from the formation of the first (Pop III) stars and black holes (BHs) in mini-haloes at z > 20. The model is anchored to observations 
+                                                of galaxies and AGN at z < 6 and predicts a reionization history consistent with constraints. In this work, we compute the evolution of the 
+                                                mean global 21-cm signal between 4 ≤ z ≤ 40 based on the rate of formation and emission properties of stars and accreting BHs. We obtain an absorption 
+                                                profile with a maximum depth δTb = -95 mK at z ~ 26.5 (54 MHz). This feature is quickly suppressed turning into an emission signal at z = 20 
+                                                due to the contribution of accreting BHs that efficiently heat the intergalactic medium (IGM) at z < 27. The high-z absorption feature is caused 
+                                                by the early coupling between the spin and kinetic temperature of the IGM induced by Pop III star formation episodes in mini-haloes. Once we account f
+                                                or an additional radio background from early BHs, we are able to reproduce the timing and the depth of the EDGES signal only if we consider 
+                                                a smaller X-ray background from accreting BHs, but not the shape. </p>
+                                            <a href=https://ui.adsabs.harvard.edu/abs/2023MNRAS.520.3609V/abstract class=button>Read the paper</a>
+                                        </div>
+                                    </div>
                                 </div><!--// .yui-gf -->
                             </div>
                         </div>
@@ -153,6 +193,14 @@
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/jquery.fittext.js"></script>
     <script src="js/wow.min.js"></script>
+
+    <!-- Plugin Addition for research-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.gridder.min.js"></script>
+    <script src="js/jquery.dropotron.min.js"></script>
+    <script src="js/jquery.scrolly.min.js"></script>
+    <script src="js/jquery.scrollgress.min.js"></script>
+    <script src="js/jquery.skel.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
