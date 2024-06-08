@@ -339,6 +339,12 @@ header .header-content .header-content-inner p {
     padding-left: 0;
 }
 
+.image.poster {
+    display: block;
+    height: 10em;
+    border-radius: 0;
+}
+
 .btn-default {
     border-color: #fff;
     color: #222;
@@ -482,4 +488,108 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #222;
+}
+
+.gridder {
+    margin: 0 0 4em 0;
+    padding: 0px;
+    list-style-type: none
+}
+
+.gridder img {
+    width: 100%
+}
+
+.gridder-list {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 0.5%
+}
+
+.gridder-list .gridder-thumb {
+    position: relative;
+    width: 100%;
+    text-align: center
+}
+
+.gridder-list .gridder-thumb h3 {
+    line-height: 1.5em;
+    position: absolute;
+    bottom: -2%;
+    left: .3em;
+    width: 100%
+}
+
+.gridder-list .gridder-thumb h3 span {
+    color: white;
+    background: #22222299;
+    padding: .15em;
+    /* box-shadow: .33em 0 0 rgba(0,0,0,0.4),-.3em 0 0 rgba(0,0,0,0.4); */
+    z-index: 1
+}
+
+.gridder-list .gridder-thumb h3 span:after {
+    content: '';
+    padding: 0 5px
+}
+
+.gridder-show {
+    display: block;
+    float: left;
+    width: 100%;
+    position: relative
+}
+
+.gridder-content {
+    display: none
+}
+
+.gridder-show {
+    padding: 20px;
+    background: #222222;
+    margin-bottom: 1%;
+    text-align: left
+}
+
+.gridder-show h2 {
+    margin-top: 0.5em
+}
+
+.gridder-show .gridder-wrapper img {
+    width: 50%;
+    float: right;
+    margin: 0.5em
+}
+
+.gridder-navigation .gridder-nav.disabled {
+    opacity: .5
+}
+
+.gridder-navigation a {
+    border-bottom: none
+}
+
+.gridder-navigation a.gridder-close {
+    position: absolute;
+    right: 3%
+}
+
+.gridder-navigation a.next {
+    margin-left: 1em
+}
+
+.gridder-list {
+    cursor: pointer
+}
+
+.gridder-list:hover {
+    opacity: .8
+}
+
+.hasSelectedItem .gridder-list {
+    opacity: .3
+}
+
+.hasSelectedItem .gridder-list.selectedItem {
+    opacity: 1
 }
